@@ -23,7 +23,7 @@ library(shinythemes)
 
 ################### Domestic Dataset #######################
 #Importing for Domestic dataset
-airlines_dom <- read.csv("D:/DataScience-26th Feb/Projects/AirFaire-Prediction/AirFare Prediction/Code/Team_Code/FinalDomesticDataset.csv")
+airlines_dom <- read.csv("Import FinalDomesticDataset.csv")
 str(airlines_dom)
 airlines_dom$InvoiceDate1 <- as.Date(airlines_dom$InvoiceDate1)
 airlines_dom <-airlines_dom[,c(2,3)]
@@ -44,7 +44,7 @@ str(predict_dom_airfare)
 ################### International Dataset #######################
 
 #Importing for International dataset
-airlines_international <- read.csv("D:/DataScience-26th Feb/Projects/AirFaire-Prediction/AirFare Prediction/Code/Team_Code/FinalInternationalDataset.csv")
+airlines_international <- read.csv("Import FinalInternationalDataset.csv")
 str(airlines_international)
 airlines_international$InvoiceDate2 <- as.Date(airlines_international$InvoiceDate2)
 airlines_international <-airlines_international[,c(2,3)]
